@@ -1,10 +1,3 @@
-/**
-* Template Name: Bootslander
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -219,3 +212,4 @@
   new PureCounter();
 
 })()
+
