@@ -89,20 +89,36 @@
   }
 
   /**
-   * Back to top button
+   * Button tanya
    */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
+  let tanya = select('.tanya')
+  if (tanya) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add('active')
+        tanya.classList.add('active')
       } else {
-        backtotop.classList.remove('active')
+        tanya.classList.remove('active')
       }
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
+
+    /**
+   * Back to top button
+   */
+    let backtotop = select('.back-to-top')
+    if (backtotop) {
+      const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+          backtotop.classList.add('active')
+        } else {
+          backtotop.classList.remove('active')
+        }
+      }
+      window.addEventListener('load', toggleBacktotop)
+      onscroll(document, toggleBacktotop)
+    }
 
   /**
    * Mobile nav toggle

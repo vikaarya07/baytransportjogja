@@ -80,6 +80,52 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Button tanya
+--------------------------------------------------------------*/
+.tanya {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #25D366;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.tanya i {
+  font-size: 30px;
+  color: #f4f4f4;
+  line-height: 0;
+}
+
+.tanya:hover {
+  background: #20b556;
+  color: #f4f4f4;
+}
+
+.tanya.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .tanya {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .tanya i {
+    font-size: 30px;
+
+  }
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -97,7 +143,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 18px;
   color: #f4f4f4;
   line-height: 0;
 }
@@ -221,7 +267,7 @@ h6 {
 .navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
-  width: 25px;
+  width: 70%;
 }
 
 .navbar a:hover,
@@ -417,14 +463,14 @@ h6 {
 #hero {
   min-height: 750px;
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/about-1.png");
   position: relative;
   padding: 120px 0 0 0;
 }
 
 #hero:before {
   content: "";
-  background: #095ae7e5;
+  background: #1365df8a;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -632,20 +678,18 @@ section {
 }
 
 .about .content ul {
-  list-style: none;
-  padding: 0;
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  padding-right: 4px;
+  list-style-type: disc;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
   font-size: 18px;
   text-align: justify;
-}
-
-.about .content ul i {
-  font-size: 18px;
-  padding-right: 4px;
-  color: #1363DF;
+  color: #1e1e1e;
 }
 
 .about .content p:last-child {
@@ -671,8 +715,13 @@ section {
     text-align: center;
   }
 
+  .about .content ul {
+    padding-left: 12px;
+    margin-left: 10px;
+  }
+
   .about .content ul li {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .about .content p:last-child {
@@ -685,10 +734,21 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  text-align: center;
+  text-align: justify;
   background: #fff;
-  padding: 80px 20px;
+  padding: 40px 20px;
   transition: all ease-in-out 0.3s;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.068);
+}
+
+.services .icon-box img {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services .icon-box .icon {
@@ -723,6 +783,7 @@ section {
 }
 
 .services .icon-box h4 {
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
@@ -764,16 +825,15 @@ section {
   padding: 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.267);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.168);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
 
 .pricelist h3 {
-  font-weight: 400;
   margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
+  padding: 15px 15px;
   font-size: 22px;
   font-weight: 600;
   color: #f4f4f4;
@@ -810,10 +870,10 @@ section {
 }
 
 .pricelist .btn-buy {
-  background: #07b313;
+  background: #25D366;
   display: inline-block;
   padding: 8px 35px 10px 35px;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #f4f4f4;
   transition: none;
   font-size: 17px;
@@ -824,7 +884,7 @@ section {
 }
 
 .pricelist .btn-buy:hover {
-  background: #068a0e;
+  background: #20b556;
 }
 
 .pricelist .advanced {
@@ -860,14 +920,15 @@ section {
 
 .pricelist .page-link {
   padding: 10px 20px 10px 20px;
-  background-color: #1363DF;
-  color: #f4f4f4;
+  border: solid 2px #1363DF;
+  color: #1363DF;
   font-weight: 600;
   text-align: center;
 }
 
 .pricelist .page-link:hover {
-  background-color: #0B409C;
+  border: solid 2px #1363DF;
+  color: #1363DF;
 }
 
 
@@ -929,7 +990,7 @@ section {
 }
 
 .pricelist-details .btn-buy {
-  background: #07b313;
+  background: #25D366;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 10px;
@@ -943,7 +1004,7 @@ section {
 }
 
 .pricelist-details .btn-buy:hover {
-  background: #068a0e;
+  background: #20b556;
 }
 
 .pricelist-details .advanced {
