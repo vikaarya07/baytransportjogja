@@ -470,7 +470,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: #1365df8a;
+  background: #1365df56;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -500,7 +500,6 @@ h6 {
   margin-bottom: 40px;
   font-size: 24px;
 }
-
 
 @media (min-width: 1024px) {
   #hero {
@@ -904,6 +903,13 @@ section {
   border: none;
 }
 
+.pricelist .accordion-button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .pricelist .accordion ul li {
   list-style-type: disc;
   text-align: justify;
@@ -911,7 +917,9 @@ section {
 }
 
 .pricelist .accordion h5 {
-  margin: 10px 0 25px 0;
+  margin: 25px -18px 15px -18px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .pricelist .pagination {
@@ -937,7 +945,7 @@ section {
 --------------------------------------------------------------*/
 
 .pricelist-details {
-  margin: 100px 0 50px 0;
+  margin: 70px 0 50px 0;
 }
 
 .pricelist-details .box {
@@ -1031,7 +1039,9 @@ section {
 }
 
 .pricelist-details .accordion h5 {
-  margin: 10px 0 25px 0;
+  margin: 25px -18px 15px -18px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .pricelist-details .pagination {
@@ -1130,7 +1140,6 @@ section {
 }
 
 #contact .contact-info {
-  margin-bottom: 15px;
   background: #fff;
   color: #1e1e1e;
   border-top: 5px solid #10316B;
@@ -1217,9 +1226,19 @@ section {
   text-decoration: none;
 }
 
+#contact iframe {
+  width: 100%;
+  height: 100%; 
+  border: 0;
+}
+
 @media (max-width: 575px) {
   #contact .contact-info {
-    margin: -20px 0 30px 0;
+    margin: 10px 0 30px 0;
+  }
+
+  #contact iframe {
+    height: 400px;
   }
 }
 
