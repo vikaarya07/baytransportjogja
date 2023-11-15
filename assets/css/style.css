@@ -461,9 +461,11 @@ h6 {
 #hero {
   min-height: 750px;
   width: 100%;
-  background: url("../img/hero.png");
+  background: url("../img/hero.png") top left no-repeat;
   padding: 150px 0 0 0;
   margin-top: 80px;
+  background-size: cover;
+  position: relative;
 }
 
 #hero h1 {
@@ -480,6 +482,7 @@ h6 {
 }
 
 #hero h2 {
+  font-family: "Humnst777 Blk BT Black Italic";
   color: #f4f4f4;
   margin-bottom: 40px;
   font-size: 24px;
@@ -552,7 +555,7 @@ section {
   margin: 4px 10px;
 }
 
-.section-title p {
+.section-title h1 {
   margin: 0;
   margin: 0;
   font-size: 30px;
@@ -788,7 +791,7 @@ section {
 
 .pricelist h4 {
   color: #1e1e1e;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   padding-top: 20px;
 }
@@ -814,7 +817,7 @@ section {
 .pricelist .btn-buy {
   background: #25D366;
   display: inline-block;
-  padding: 8px 35px 10px 35px;
+  padding: 10px 55px 10px 55px;
   border-radius: 8px;
   color: #f4f4f4;
   transition: none;
@@ -853,6 +856,11 @@ section {
   cursor: pointer;
 }
 
+.pricelist .accordion-body {
+  padding: 0 5px 0 5px;
+  text-align: left;
+}
+
 .pricelist .accordion ul li {
   list-style-type: disc;
   text-align: justify;
@@ -861,9 +869,10 @@ section {
 }
 
 .pricelist .accordion h5 {
-  margin: 25px -18px 15px -18px;
-  font-size: 20px;
+  margin: 5px -18px 5px -18px;
+  font-size: 18px;
   font-weight: 600;
+  text-align: center;
 }
 
 .pricelist .pagination {
@@ -881,6 +890,12 @@ section {
 .pricelist .page-link:hover {
   border: solid 2px #1363DF;
   color: #1363DF;
+}
+
+@media (max-width: 575px) {
+  .pricelist .btn-buy {
+    padding: 10px 100px 10px 100px;
+  }
 }
 
 
@@ -1113,11 +1128,20 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-#contact .contact h2 {
-  font-size: 28px;
+#contact .tentang h1 {
+  font-size: 32px;
   font-weight: 700;
   color: #10316B;
   margin-bottom: 15px;
+}
+
+#contact .tentang img {
+  height: 250px;
+  width: 250px;
+}
+
+#contact .tentang p {
+  text-align: justify;
 }
 
 #contact .contact-info h3 {
