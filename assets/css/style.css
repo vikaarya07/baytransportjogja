@@ -461,7 +461,7 @@ h6 {
 #hero {
   min-height: 750px;
   width: 100%;
-  background: url("../img/hero.png") top left no-repeat;
+  background: url("../img/hero.png") top right no-repeat;
   padding: 150px 0 0 0;
   margin-top: 80px;
   background-size: cover;
@@ -469,9 +469,9 @@ h6 {
 }
 
 #hero h1 {
+  font-family: 'Rowdies';
   margin: 50px 0 20px 0;
   font-size: 48px;
-  font-weight: 700;
   line-height: 56px;
   color: #f4f4f4;
 }
@@ -494,14 +494,16 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 33px;
+    font-size: 36px;
     line-height: 32px;
     margin: 25px 0 30px 0;
+    -webkit-text-stroke: 2px #1e1e1e;
   }
 
   #hero h2 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 24px;
+    -webkit-text-stroke: 1.5px #1e1e1e;
   }
 }
 
@@ -816,13 +818,12 @@ section {
 
 .pricelist .btn-buy {
   background: #25D366;
-  display: inline-block;
-  padding: 10px 55px 10px 55px;
+  display: block;
+  padding: 10px;
   border-radius: 8px;
   color: #f4f4f4;
   transition: none;
   font-size: 17px;
-  font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: 0.3s;
@@ -862,7 +863,6 @@ section {
 }
 
 .pricelist .accordion ul li {
-  list-style-type: disc;
   text-align: justify;
   padding-bottom: 2px;
   font-size: 17px;
@@ -894,7 +894,7 @@ section {
 
 @media (max-width: 575px) {
   .pricelist .btn-buy {
-    padding: 10px 100px 10px 100px;
+    padding: 10px;
   }
 }
 
@@ -964,7 +964,6 @@ section {
   color: #f4f4f4;
   transition: none;
   font-size: 17px;
-  font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: 0.3s;
