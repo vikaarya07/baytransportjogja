@@ -476,11 +476,6 @@ h6 {
   color: #f4f4f4;
 }
 
-#hero h1 span {
-  color: #f4f4f4;
-  border-bottom: 4px solid #f4f4f4;
-}
-
 #hero h2 {
   font-family: "Humnst777 Blk BT Black Italic";
   color: #f4f4f4;
@@ -507,6 +502,11 @@ h6 {
   }
 }
 
+@media (max-width: 525px) {
+  #hero {
+    background: url("../img/hero-mobile.png") center;
+  }
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -778,6 +778,14 @@ section {
   overflow: hidden;
 }
 
+.pricelist .details {
+  margin-top: 70px;
+}
+
+.pricelist .baris {
+  margin-bottom: 25px;
+}
+
 .pricelist h3 {
   margin: -20px -20px 10px -20px;
   padding: 15px 15px;
@@ -793,7 +801,7 @@ section {
 
 .pricelist h4 {
   color: #1e1e1e;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   padding-top: 20px;
 }
@@ -808,6 +816,7 @@ section {
 }
 
 .pricelist ul li {
+  list-style-type: disc;
   padding-bottom: 16px;
 }
 
@@ -858,7 +867,7 @@ section {
 }
 
 .pricelist .accordion-body {
-  padding: 0 5px 0 5px;
+  padding: 10px 35px 10px 35px;
   text-align: left;
 }
 
@@ -868,11 +877,19 @@ section {
   font-size: 17px;
 }
 
-.pricelist .accordion h5 {
+.pricelist .accordion h4 {
   margin: 5px -18px 5px -18px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.pricelist .accordion h5 {
+  margin: 5px -18px 5px -18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
 }
 
 .pricelist .pagination {
@@ -897,124 +914,6 @@ section {
     padding: 10px;
   }
 }
-
-
-/*--------------------------------------------------------------
-# pricelist details
---------------------------------------------------------------*/
-
-.pricelist-details {
-  margin: 70px 0 50px 0;
-}
-
-.pricelist-details .box {
-  padding: 20px 10px 20px 10px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.267);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricelist-details h3 {
-  font-weight: 400;
-  margin: -20px -20px 10px -20px;
-  padding: 15px 15px;
-  font-size: 22px;
-  font-weight: 600;
-  color: #f4f4f4;
-  background: #1363DF;
-}
-
-.pricelist-details img {
-  transition: all ease-in-out 0.4s;
-}
-
-.pricelist-details h4 {
-  color: #1e1e1e;
-  font-size: 25px;
-  font-weight: 600;
-  padding-top: 20px;
-}
-
-.pricelist-details ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricelist-details ul li {
-  padding-bottom: 16px;
-}
-
-.pricelist-details ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricelist-details .btn-buy {
-  background: #25D366;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 10px;
-  color: #f4f4f4;
-  transition: none;
-  font-size: 17px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricelist-details .btn-buy:hover {
-  background: #20b556;
-}
-
-.pricelist-details .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 15px;
-  padding: 1px 0 3px 0;
-  background: #e80909;
-  color: #f4f4f4;
-}
-
-.pricelist-details .accordion-item {
-  border: none;
-}
-
-.pricelist-details .accordion-button {
-  outline: none;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.pricelist-details .accordion ul li {
-  list-style-type: disc;
-  text-align: justify;
-  padding-bottom: 2px;
-  font-size: 17px;
-}
-
-.pricelist-details .accordion h5 {
-  margin: 25px -18px 15px -18px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.pricelist-details .pagination {
-  padding: 40px 0 40px 0;
-
-}
-
 
 /*--------------------------------------------------------------
 # F.A.Q
