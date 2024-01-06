@@ -857,6 +857,23 @@ section {
   text-align: left;
 }
 
+.pricelist .accordion-body .table{
+  padding: 5px 15px 5px 15px;
+  text-align: left;
+}
+
+.pricelist .accordion-body td{
+  font-size: 13px;
+}
+
+.pricelist .accordion-body .note{
+  text-align: left;
+}
+
+.pricelist .accordion-body .note p{
+  font-size: 13px;
+}
+
 .pricelist .accordion ul li {
   text-align: justify;
   padding-bottom: 2px;
