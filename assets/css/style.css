@@ -857,12 +857,12 @@ section {
   text-align: left;
 }
 
-.pricelist .accordion-body .table{
+.pricelist .accordion-body .table-event{
   padding: 5px 15px 5px 15px;
   text-align: left;
 }
 
-.pricelist .accordion-body td{
+.pricelist .accordion-body .table-event td{
   font-size: 13px;
 }
 
@@ -915,6 +915,12 @@ section {
 @media (max-width: 575px) {
   .pricelist .btn-buy {
     padding: 10px;
+  }
+  .pricelist .accordion-body .note p{
+    font-size: 15px;
+  }
+  .pricelist .accordion-body .table-event td{
+    font-size: 17px;
   }
 }
 
