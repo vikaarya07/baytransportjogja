@@ -848,29 +848,29 @@ section {
   text-align: left;
 }
 
-.pricelist .accordion-body td{
+.pricelist .accordion-body td {
   padding: 4px;
 }
 
-.pricelist .accordion-body .fasilitas{
+.pricelist .accordion-body .fasilitas {
   padding: 5px 15px 5px 15px;
   text-align: left;
 }
 
-.pricelist .accordion-body .table-event{
+.pricelist .accordion-body .table-event {
   padding: 5px 15px 5px 15px;
   text-align: left;
 }
 
-.pricelist .accordion-body .table-event td{
+.pricelist .accordion-body .table-event td {
   font-size: 13px;
 }
 
-.pricelist .accordion-body .note{
+.pricelist .accordion-body .note {
   text-align: left;
 }
 
-.pricelist .accordion-body .note p{
+.pricelist .accordion-body .note p {
   font-size: 13px;
 }
 
@@ -916,12 +916,33 @@ section {
   .pricelist .btn-buy {
     padding: 10px;
   }
-  .pricelist .accordion-body .note p{
+
+  .pricelist .accordion-body .note p {
     font-size: 15px;
   }
-  .pricelist .accordion-body .table-event td{
+
+  .pricelist .accordion-body .table-event td {
     font-size: 17px;
   }
+}
+
+/*--------------------------------------------------------------
+# Privacy Policy
+--------------------------------------------------------------*/
+.privacy-policy {
+  padding: 150px 0 100px 0;
+  text-align: justify;
+}
+
+.privacy-policy h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.privacy-policy h2 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
